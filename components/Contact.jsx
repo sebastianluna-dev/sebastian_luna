@@ -1,7 +1,7 @@
 import { motion } from "framer-motion"
 export const Contact = () => {
   return (
-    <motion.div layout className="bg-theme-lavender py-28 relative px-4 sm:px-8 md:px-16 lg:px-8 xl:px-24">
+    <motion.div layout className="flex items-center bg-theme-lavender py-28 relative px-4 sm:px-8 md:px-16 lg:px-8 xl:px-24 min-h-screen">
       <div className=" max-w-2xl lg:max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 relative z-10 items-center">
         <div className="text-white lg:text-theme-pink leading-none">
           <h2 className="font-bold text-[40px] sm:text-5xl lg:text-[56px] xl:text-[60px] lg:leading-[56px] text-center">

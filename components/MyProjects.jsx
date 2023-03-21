@@ -87,7 +87,7 @@ const Carousel = ({ carouselData }) => {
             transition={{
                duration: 0.3 
             }}
-            className="grid lg:grid-cols-2 items-center gap-8 lg:min-h-[600px]"
+            className="grid lg:grid-cols-2 items-center gap-8 lg:min-h-[500px]"
           >
             <motion.img layout="position" src={project.image} className="rounded-xl h-60 lg:h-auto w-full object-cover"/>
             <motion.div layout>

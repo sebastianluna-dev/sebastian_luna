@@ -2,7 +2,7 @@ import { GithubIcon, InstagramIcon, LinkedInIcon } from "./Icons"
 
 export const  Hero = () => {
   return (
-    <div className="bg-theme-green pt-12 lg:pt-28 relative px-4 sm:px-8 md:px-16 lg:px-8 xl:px-24">
+    <div className="bg-theme-green pt-12 lg:pt-28 relative px-4 sm:px-8 md:px-16 lg:px-8 xl:px-24 min-h-screen">
       <div className=" max-w-2xl lg:max-w-7xl mx-auto grid lg:grid-cols-2 relative z-10">
         <div className="text-theme-lime leading-none">
           <h1 className="font-extrabold text-[40px] sm:text-5xl lg:text-7xl xl:text-[80px]">
