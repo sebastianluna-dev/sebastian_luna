@@ -87,11 +87,11 @@ const Carousel = ({ carouselData }) => {
             transition={{
                duration: 0.3 
             }}
-            className="grid lg:grid-cols-2 items-center gap-8 lg:min-h-[500px]"
+            className="min-h-[600px] grid lg:grid-cols-2 lg:items-center gap-4 lg:gap-8 lg:min-h-[500px]"
           >
             <motion.img layout="position" src={project.image} className="rounded-xl h-60 lg:h-auto w-full object-cover"/>
             <motion.div layout>
-              <motion.p layout className="font-extralight sm:text-lg md:text-xl">{project.description}</motion.p>
+              <motion.p layout className="font-extralight sm:text-lg md:text-xl text-center lg:text-left">{project.description}</motion.p>
               <motion.div layout className="flex justify-center lg:justify-start">
                 <a 
                   href={project.link} 
@@ -102,6 +102,7 @@ const Carousel = ({ carouselData }) => {
                 </a>
               </motion.div>
             </motion.div>
+            <div></div>
           </motion.div>
         </AnimatePresence>
       </div>
@@ -128,23 +129,23 @@ const Carousel = ({ carouselData }) => {
 
 export const MyProjects = () => {
   return (
-    <motion.div layout className="bg-theme-dark text-white py-12 lg:py-28 px-4 sm:px-8 md:px-16 lg:px-8 xl:px-24">
-      <motion.div layout className="max-w-7xl mx-auto pt-8">
-        <motion.h2 layout className="font-bold text-[40px] sm:text-5xl lg:text-[56px] xl:text-[60px] lg:leading-[56px] max-w-2xl leading-none">
+    <div layout className="bg-theme-dark text-white py-12 lg:py-28 px-4 sm:px-8 md:px-16 lg:px-8 xl:px-24">
+      <div layout className="max-w-7xl mx-auto pt-8">
+        <h2 layout className="font-bold text-[40px] sm:text-5xl lg:text-[56px] xl:text-[60px] lg:leading-[56px] max-w-2xl leading-none">
           ¡El éxito de mis clientes es mi éxito!
-        </motion.h2>
-        <motion.p layout="position" className="font-extralight text-xl lg:text-[32px] xl:text-[36px] leading-snug lg:leading-none mt-4">
+        </h2>
+        <p layout="position" className="font-extralight text-xl lg:text-[32px] xl:text-[36px] leading-snug lg:leading-none mt-4">
           Me enorgullece mostrar mi portfolio, lleno 
           de proyectos que he creado para empresas de 
           diferentes industrias. Desde sitios web de 
           comercio electrónico hasta páginas de destino 
           y sitios web corporativos, diseños que están 
           a la vanguardia de la innovación y el estilo.
-        </motion.p>
-        <motion.h3 layout className="font-bold text-[40px] sm:text-5xl lg:text-[56px] xl:text-[60px] lg:leading-[56px] text-center my-8 md:my-16">Proyectos</motion.h3>
+        </p>
+        <h3 layout className="font-bold text-[40px] sm:text-5xl lg:text-[56px] xl:text-[60px] lg:leading-[56px] text-center my-8 md:my-16">Proyectos</h3>
         <Carousel carouselData={carouselData} />
-      </motion.div>
+      </div>
 
-    </motion.div>
+    </div>
   )
 }

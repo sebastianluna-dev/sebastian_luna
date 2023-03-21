@@ -2,8 +2,8 @@ import { GithubIcon, InstagramIcon, LinkedInIcon } from "./Icons"
 
 export const  Hero = () => {
   return (
-    <div className="bg-theme-green pt-12 lg:pt-28 relative px-4 sm:px-8 md:px-16 lg:px-8 xl:px-24 min-h-screen  ">
-      <div className=" max-w-2xl lg:max-w-7xl mx-auto grid lg:grid-cols-2 relative z-10">
+    <div className="bg-theme-green pt-12 lg:pt-28 relative px-4 sm:px-8 md:px-16 lg:px-8 xl:px-24">
+      <div className=" max-w-2xl h-full lg:max-w-7xl mx-auto grid lg:grid-cols-2 relative z-10">
         <div className="text-theme-lime leading-none">
           <h1 className="font-extrabold text-[40px] sm:text-5xl lg:text-7xl xl:text-[80px]">
             Diseñador y desarrollador web senior 
@@ -18,7 +18,7 @@ export const  Hero = () => {
           </div>
         </div>
         <div className="relative">
-          <img className="w-full max-w-lg justify-self-center lg:justify-self-start" src="/hero-image.png" alt="Sebastian Luna" />
+          <img className="w-full max-w-xl justify-self-center lg:justify-self-start" src="/hero-image.png" alt="Sebastian Luna" />
           <div className="flex gap-4 justify-center absolute bottom-24 left-0 right-0">
             <a className="w-16 h-16 p-2 rounded-full bg-theme-lime flex justify-center items-center cursor-pointer">
               <InstagramIcon/>

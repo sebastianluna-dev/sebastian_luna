@@ -18,13 +18,13 @@ export const Animation = () => {
       <AnimatePresence>
         {
           animation === 1 &&
-          <div className="flex xl:-mr-24">
-            <motion.img  className=" mx-auto h-40 sm:h-80 -mr-12 relative self-center" src="/animation-2.png" />
+          <div className="flex xl:-mr-24 py-12 lg:py-0">
+            <motion.img  className=" mx-auto h-40 sm:h-80 lg:h-60 xl:h-80 -mr-12 relative self-center" src="/animation-2.png" />
             <img
               className="max-w-[200px] lg:max-w-[250px] xl:max-w-[350px] sm:max-w-xs md:max-w-sm mx-auto object-contain" 
               src="/animation-1.png" 
             />
-            <img className="mx-auto h-32 sm:h-60 -ml-24" src="/animation-3.png" />
+            <img className="mx-auto h-32 sm:h-60 lg:h-44 xl:h-60 -ml-24" src="/animation-3.png" />
           </div>
         }
         {

@@ -18,8 +18,8 @@ export default function Home() {
       <main className=""> 
         <Hero />
         <CreateYourEcommerce />
+        <MyProjects />
         <LayoutGroup>
-          <MyProjects />
           <FAQS />
           <Contact />
         </LayoutGroup>
