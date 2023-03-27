@@ -51,7 +51,7 @@ const Question = ({ question, answer}) => {
 
 export const FAQS = () => {
   return(
-    <motion.div layout className="min-h-screen bg-theme-maroon text-theme-pink py-12 lg:py-20 px-4 sm:px-8 md:px-16 lg:px-8 xl:px-24">
+    <motion.div layout className=" overflow-y-hidden min-h-screen bg-theme-maroon text-theme-pink py-12 lg:py-20 px-4 sm:px-8 md:px-16 lg:px-8 xl:px-24">
       <div>
         <motion.h3 layout="position" className="leading-none font-bold text-[40px] sm:text-5xl lg:text-[56px] xl:text-[60px] lg:leading-[56px] text-center my-16">
           Preguntas <br/>frecuentes
